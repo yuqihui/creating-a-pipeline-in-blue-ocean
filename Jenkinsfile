@@ -7,6 +7,11 @@ pipeline {
 
   }
   stages {
+    stage(' creating-a-pipeline-in-blue-ocean') {
+      steps {
+        sh 'npm install'
+      }
+    }
     stage('Build') {
       steps {
         sh 'npm install'
